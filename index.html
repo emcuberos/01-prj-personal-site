@@ -2,10 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emily Cuberos | Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header is the first thing visitors see. -->
+  <header class="hero">
+    <nav class="navigation">
+      <a class="logo" href="#top">EC</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </nav>
+
+    <div class="hero-layout" id="top">
+      <div class="hero-content">
+        <p class="eyebrow">Web development student</p>
+        <h1>Hi, I’m <span>Emily Cuberos</span>.</h1>
+        <p class="hero-text">I’m learning to build thoughtful, useful websites one project at a time.</p>
+        <a class="button" href="#about">Get to know me</a>
+      </div>
+
+      <!-- Replace this circle with your image later. -->
+      <div class="image-placeholder" aria-label="Placeholder for Emily's photo"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- This section is a short introduction about you. -->
+    <section class="about section" id="about">
+      <div class="section-label">01 / About</div>
+      <div class="about-content">
+        <h2>A curious mind<br><em>under construction.</em></h2>
+        <div>
+          <p>I’m a web development student who enjoys turning ideas into clean, friendly digital experiences.</p>
+          <p>This portfolio will grow with me throughout my course. Come back soon to see the projects, experiments, and lessons I’m collecting along the way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add or remove skills as you learn new technologies. -->
+    <section class="skills section" id="skills">
+      <div class="section-label">02 / Skills</div>
+      <div class="skills-heading">
+        <h2>What I’m learning</h2>
+        <p>My current toolkit</p>
+      </div>
+      <ul class="skill-list">
+        <li><span>01</span> HTML</li>
+        <li><span>02</span> CSS</li>
+        <li><span>03</span> JavaScript</li>
+        <li><span>04</span> Responsive design</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Emily Cuberos</p>
+    <a href="mailto:ecube004@fiu.edu">Say hello →</a>
+  </footer>
 </body>
 </html>

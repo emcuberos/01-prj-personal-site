@@ -1,1 +1,265 @@
-/* Add you CSS here */
+/* These variables make the main colors easy to change. */
+:root {
+	--ink: #17221f;
+	--paper: #f3f0e8;
+	--green: #2f5d50;
+	--mint: #c9d9c6;
+	--orange: #ed754d;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	color: var(--ink);
+	background: var(--paper);
+	font-family: Georgia, 'Times New Roman', serif;
+	line-height: 1.6;
+}
+
+a {
+	color: inherit;
+}
+
+.hero {
+	min-height: 620px;
+	padding: 24px 8%;
+	background-color: var(--green);
+	background-image: radial-gradient(circle at 82% 28%, rgba(237, 117, 77, 0.8) 0 12%, transparent 12.5%), linear-gradient(135deg, var(--green), #173c35);
+	color: var(--paper);
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(243, 240, 232, 0.35);
+	padding-bottom: 18px;
+}
+
+.logo {
+	color: var(--orange);
+	font-family: Arial, sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-links a {
+	margin-left: 24px;
+	font-family: Arial, sans-serif;
+	font-size: 0.8rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.hero-layout {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 115px 0 80px;
+}
+
+.hero-content {
+	max-width: 700px;
+}
+
+.image-placeholder {
+	flex-shrink: 0;
+	width: 260px;
+	height: 260px;
+	border: 2px solid var(--orange);
+	border-radius: 50%;
+	background-color: rgba(243, 240, 232, 0.12);
+}
+
+.eyebrow,
+.section-label,
+.skills-heading p {
+	font-family: Arial, sans-serif;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.eyebrow {
+	color: var(--orange);
+}
+
+h1,
+h2,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	max-width: 720px;
+	margin-bottom: 20px;
+	font-size: clamp(3.5rem, 9vw, 7rem);
+	font-weight: normal;
+	line-height: 0.95;
+}
+
+h1 span,
+h2 em {
+	color: var(--orange);
+	font-style: normal;
+}
+
+.hero-text {
+	max-width: 420px;
+	font-size: 1.2rem;
+}
+
+.button {
+	display: inline-block;
+	margin-top: 18px;
+	padding: 12px 20px;
+	background: var(--orange);
+	color: var(--ink);
+	font-family: Arial, sans-serif;
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.section {
+	padding: 110px 8%;
+}
+
+.section-label {
+	color: var(--green);
+	margin-bottom: 48px;
+}
+
+.about {
+	background: var(--paper);
+}
+
+.about-content {
+	display: flex;
+	gap: 12%;
+	justify-content: space-between;
+}
+
+h2 {
+	margin-bottom: 24px;
+	font-size: clamp(2.3rem, 5vw, 4.5rem);
+	font-weight: normal;
+	line-height: 1;
+}
+
+.about-content h2 {
+	width: 55%;
+}
+
+.about-content div {
+	max-width: 380px;
+	font-size: 1.1rem;
+}
+
+.skills {
+	background: var(--mint);
+}
+
+.skills-heading {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+}
+
+.skills-heading p {
+	margin-bottom: 28px;
+	color: var(--green);
+}
+
+.skill-list {
+	margin: 30px 0 0;
+	padding: 0;
+	border-top: 1px solid var(--green);
+	list-style: none;
+	font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.skill-list li {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid var(--green);
+	padding: 16px 0;
+}
+
+.skill-list span {
+	width: 70px;
+	color: var(--green);
+	font-family: Arial, sans-serif;
+	font-size: 0.75rem;
+	letter-spacing: 1px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 8%;
+	background: var(--ink);
+	color: var(--paper);
+	font-family: Arial, sans-serif;
+	font-size: 0.8rem;
+}
+
+footer a {
+	color: var(--orange);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+@media (max-width: 650px) {
+	.hero {
+		min-height: 560px;
+	}
+
+	.hero-content {
+		padding-top: 110px;
+	}
+
+	.hero-layout {
+		display: block;
+		padding-top: 90px;
+	}
+
+	.image-placeholder {
+		width: 180px;
+		height: 180px;
+		margin-top: 55px;
+	}
+
+	.about-content,
+	.skills-heading,
+	footer {
+		display: block;
+	}
+
+	.about-content h2 {
+		width: auto;
+	}
+
+	.skills-heading p {
+		margin-top: 10px;
+	}
+
+	footer p {
+		margin-bottom: 10px;
+	}
+}
