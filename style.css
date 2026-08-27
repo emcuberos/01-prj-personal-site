@@ -225,6 +225,14 @@ h2 {
 	letter-spacing: 1px;
 }
 
+.skill-list i {
+	width: 48px;
+	margin-right: 12px;
+	color: var(--orange);
+	font-size: 0.8em;
+	text-align: center;
+}
+
 footer {
 	display: flex;
 	justify-content: space-between;
