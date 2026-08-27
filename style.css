@@ -29,18 +29,24 @@ a {
 
 .hero {
 	min-height: 620px;
-	padding: 24px 8%;
+	padding: 90px 8% 24px;
 	background-color: var(--green);
 	background-image: radial-gradient(circle at 82% 28%, rgba(237, 117, 77, 0.8) 0 12%, transparent 12.5%), linear-gradient(135deg, var(--green), #173c35);
 	color: var(--paper);
 }
 
 .navigation {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 24px 8% 18px;
 	border-bottom: 1px solid rgba(243, 240, 232, 0.35);
-	padding-bottom: 18px;
+	background: var(--green);
 }
 
 .logo {
@@ -61,6 +67,7 @@ a {
 }
 
 .hero-layout {
+	scroll-margin-top: 90px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -137,6 +144,7 @@ h2 em {
 }
 
 .section {
+	scroll-margin-top: 90px;
 	padding: 110px 8%;
 }
 
@@ -172,6 +180,14 @@ h2 {
 }
 
 .skills {
+	background: var(--mint);
+}
+
+.projects {
+	background: var(--paper);
+}
+
+.contact {
 	background: var(--mint);
 }
 
@@ -213,8 +229,8 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 24px 8%;
-	background: var(--ink);
-	color: var(--paper);
+	background: var(--green);
+	color: var(--orange);
 	font-family: Arial, sans-serif;
 	font-size: 0.8rem;
 }
