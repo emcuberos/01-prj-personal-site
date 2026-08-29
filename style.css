@@ -237,12 +237,18 @@ h2 {
 
 footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 	padding: 24px 8%;
 	background: var(--green);
 	color: var(--orange);
 	font-family: Arial, sans-serif;
 	font-size: 0.8rem;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
 }
 
 footer a {
